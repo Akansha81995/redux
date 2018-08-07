@@ -25,7 +25,6 @@ class NewLayout extends React.Component {
     render() {
         return (
             <div>
-                {this.props.name}
                 <input onChange={this.updateValue}/>
                 <button onClick={this.myActionCaller}>My Button</button>
             </div>

@@ -1,7 +1,9 @@
 export const myReducer = (state, action) => {
     switch(action.type) {
         case "DEMO":
-            return Object.assign({}, state, action.payload)
+            let tempStatete = Object.assign({}, state)
+            tempStatete.animalNames.push(action.payload.name)
+            return tempStatete
         default:
             return state
     }
